@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.fym.layiheidareetmesistemi.View.LoginScreen">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="9" y="13" width="842" height="586"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="e2ca0" class="javax.swing.JTextField" binding="username">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag top="0" left="0" bottom="6" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <preferredSize width="200" height="30"/>
+        </properties>
+      </component>
+      <component id="424de" class="javax.swing.JPasswordField" binding="password">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag top="0" left="0" bottom="20" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <maximumSize width="2147483647" height="2147483647"/>
+          <minimumSize width="49" height="30"/>
+          <preferredSize width="200" height="30"/>
+        </properties>
+      </component>
+      <component id="8196a" class="javax.swing.JLabel" binding="girisLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="50" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Inter" size="36"/>
+          <horizontalAlignment value="10"/>
+          <horizontalTextPosition value="10"/>
+          <text value="Giriş"/>
+        </properties>
+      </component>
+      <component id="b4f17" class="javax.swing.JButton" binding="button">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="70" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <contentAreaFilled value="true"/>
+          <focusPainted value="true"/>
+          <focusable value="false"/>
+          <hideActionText value="false"/>
+          <label value="Giriş et"/>
+          <opaque value="true"/>
+          <rolloverEnabled value="true"/>
+          <text value="Giriş et"/>
+          <verifyInputWhenFocusTarget value="true"/>
+        </properties>
+      </component>
+      <grid id="4989" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="81151" class="javax.swing.JLabel" binding="errorMsg">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-65507"/>
+              <font name="Inter" style="1"/>
+              <foreground color="-65525"/>
+              <text value="Məlumatlar yalnışdır"/>
+            </properties>
+          </component>
+          <hspacer id="46da9">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+          </hspacer>
+          <vspacer id="3742b">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+          </vspacer>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
