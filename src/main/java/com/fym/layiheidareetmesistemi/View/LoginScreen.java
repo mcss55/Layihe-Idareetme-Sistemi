@@ -40,7 +40,7 @@ public class LoginScreen extends JFrame {
                 if (((username.getText() == null) || username.getText().isBlank()) || ((String.valueOf(password.getPassword()) == null) || String.valueOf(password.getPassword()).isBlank())) {
                     errorMsg.setText("Məlumatlar yalnışdır!");
                     errorMsg.setVisible(true);
-                    errorMsg.setBackground(Color.RED);
+                    errorMsg.setBackground(Color.RED);//
                     errorMsg.setForeground(Color.red);
                 } else {
                     errorMsg.setText("");
