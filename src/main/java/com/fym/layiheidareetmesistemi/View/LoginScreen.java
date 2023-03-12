@@ -1,6 +1,7 @@
 package com.fym.layiheidareetmesistemi.View;
 
 import com.fym.layiheidareetmesistemi.Core.DTO.Request.Employee.EmployeeRegistrationRequset;
+import com.fym.layiheidareetmesistemi.Core.Enums.Role;
 import com.fym.layiheidareetmesistemi.Core.Exceptions.Employee.EmployeeException;
 import com.fym.layiheidareetmesistemi.Services.Concretes.Employee.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +46,7 @@ public class LoginScreen extends JFrame {
                 } else {
                     errorMsg.setText("");
                     EmployeeRegistrationRequset requset=
-                            new EmployeeRegistrationRequset("Maqsud","Safin","Shovket","HR","2134");
+                            new EmployeeRegistrationRequset("Maqsud","Safin","Shovket", "mcss","HR", "123qwe123", Role.ADMIN);
                     try{
                         employeeService.addEmployee(requset);
                     }catch (EmployeeException error){

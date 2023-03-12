@@ -1,6 +1,7 @@
 package com.fym.layiheidareetmesistemi.Models;
 
 
+import com.fym.layiheidareetmesistemi.Core.Enums.Role;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -24,7 +25,7 @@ public class Employee {
     String lastName;
     @Column(name = "father_name")
     String fatherName;
-    @Column(name = "user_name")
+    @Column(name = "user_name",unique = true)
     String userName;
     @Column(name = "position")
     String position;
@@ -37,6 +38,8 @@ public class Employee {
     Double jobPercent;
     @Column(name = "employee_completed_percent")
     Double completedPercent;
+    @Column(name = "role")
+    Role role;
     @ManyToOne
     @JoinColumn(name = "job_id")
     Job job;

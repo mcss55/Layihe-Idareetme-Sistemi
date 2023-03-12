@@ -1,8 +1,6 @@
 package com.fym.layiheidareetmesistemi.Core.DTO.Request.Employee;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import com.fym.layiheidareetmesistemi.Core.Enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,24 +9,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class EmployeeRegistrationRequset {
-    @NotNull
-    @NotBlank
-    @Size(min = 3)
+
     String firstName;
-    @NotNull
-    @NotBlank
-    @Size(min = 3)
     String lastName;
-    @NotNull
-    @NotBlank
-    @Size(min = 3)
     String fatherName;
-    @NotNull
-    @NotBlank
-    @Size(min = 2)
+    String userName;
     String position;
-    @NotNull
-    @NotBlank
-    @Size(min = 8)
     String password;
+    Role role;
 }

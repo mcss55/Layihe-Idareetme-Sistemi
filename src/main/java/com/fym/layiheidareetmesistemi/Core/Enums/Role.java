@@ -1,6 +1,6 @@
 package com.fym.layiheidareetmesistemi.Core.Enums;
 
-public enum Roles {
+public enum Role {
     ADMIN,
     DEPARTMENT_MANAGER,
     EMPLOYEE
