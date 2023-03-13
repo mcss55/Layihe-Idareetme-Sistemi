@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class EmployeeRegistrationRequest {
+public class EmployeeRegistrationRequest  {
     @NotNull
     @NotBlank
     @Size(min = 3)
