@@ -1,7 +1,6 @@
 package com.fym.layiheidareetmesistemi.Services.Concretes.Employee;
 
-import com.fym.layiheidareetmesistemi.Core.DTO.Request.Employee.EmployeeRegistrationRequset;
-import com.fym.layiheidareetmesistemi.Core.Exceptions.Employee.EmployeeException;
+import com.fym.layiheidareetmesistemi.Core.DTO.Request.Employee.EmployeeRegistrationRequest;
 import com.fym.layiheidareetmesistemi.Core.Rules.Concretes.Employee.EmployeeRules;
 import com.fym.layiheidareetmesistemi.Core.Utils.Mappers.Concretes.ModelManager;
 import com.fym.layiheidareetmesistemi.Models.Employee;
@@ -23,7 +22,7 @@ public class EmployeeService implements IEmployeeService {
     public List<Employee> getAllEmployees() {return employeeRepository.findAll();}
 
     @Override
-    public void addEmployee(EmployeeRegistrationRequset employeeRequest)  {
+    public void addEmployee(EmployeeRegistrationRequest employeeRequest)  {
 
         this.employeeRules.checkNullFields(employeeRequest);
         this.employeeRules.checkFirstNameLength(employeeRequest);
