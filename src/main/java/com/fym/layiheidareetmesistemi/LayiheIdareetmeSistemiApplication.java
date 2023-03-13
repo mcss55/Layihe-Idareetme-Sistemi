@@ -19,18 +19,17 @@ import java.awt.*;
 @EnableTransactionManagement
 public class LayiheIdareetmeSistemiApplication {
 
-    static ConfigurableApplicationContext ctx;
+
 
     public static void main(String... args) {
-        ctx = new SpringApplicationBuilder(LayiheIdareetmeSistemiApplication.class)
+
+        ConfigurableApplicationContext ctx = new SpringApplicationBuilder(LayiheIdareetmeSistemiApplication.class)
                 .headless(false).run(args);
 
-        EventQueue.invokeLater(() -> {
             var ex = ctx.getBean(LoginScreen.class);
             ex.setVisible(true);
-        });
-
     }
+
 
     @Bean
     public ModelMapper getModelMapper(){
