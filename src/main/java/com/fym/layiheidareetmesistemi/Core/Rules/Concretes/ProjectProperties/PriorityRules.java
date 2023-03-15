@@ -19,6 +19,7 @@ public class PriorityRules implements IPriorityRules {
         }
     }
 
+
     @Override
     public void checkNullFields(PriorityRegistrationRequest request) {
         if (request.getName() == null || request.getOrderNumber() == null) {
