@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PriorityRegistrationResponse {
-    String name;
-    Integer orderNumber;
+public class StatusRegistrationResponse {
+String name;
 }
