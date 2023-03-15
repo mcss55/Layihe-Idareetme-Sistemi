@@ -1,5 +1,4 @@
 package com.fym.layiheidareetmesistemi.Models;
-
 import com.fym.layiheidareetmesistemi.Models.ProjectProperties.Priority;
 import com.fym.layiheidareetmesistemi.Models.ProjectProperties.Status;
 import com.fym.layiheidareetmesistemi.Models.RegionSettlement.RegionAndCity;
